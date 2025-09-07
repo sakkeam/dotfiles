@@ -25,3 +25,4 @@ mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 
 use '/home/konosuke/.config/broot/launcher/nushell/br' *
+source $"($nu.home-path)/.cargo/env.nu"
