@@ -3,6 +3,7 @@ padding = { x = 32, y = 32 }
 
 [font]
 normal = { family = "Cascadia Code NF", style = "Regular" }
+size = 11.25
 
 [terminal]
 shell = { program = "nu", args = ["--login"] }
