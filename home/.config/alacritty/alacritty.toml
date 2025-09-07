@@ -1,2 +1,5 @@
+[font]
+normal = { family = "Cascadia Code NF", style = "Regular" }
+
 [terminal]
 shell = { program = "nu", args = ["--login"] }
