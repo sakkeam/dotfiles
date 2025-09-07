@@ -26,3 +26,5 @@ starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.n
 
 use '/home/konosuke/.config/broot/launcher/nushell/br' *
 source $"($nu.home-path)/.cargo/env.nu"
+$env.VOLTA_HOME = $"($env.HOME)/.volta"
+$env.PATH = ($env.PATH | prepend $"($env.VOLTA_HOME)/bin")
