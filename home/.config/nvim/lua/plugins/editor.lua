@@ -165,4 +165,22 @@ return {
 			"zbirenbaum/copilot-cmp",
 		},
 	},
+	{
+		"smoka7/hop.nvim",
+		version = "*",
+		config = function()
+			local hop = require("hop")
+
+			hop.setup({})
+
+			local directions = require("hop.hint").HintDirection
+
+			vim.keymap.set("", "f", function()
+				hop.hint_char1({ direction = directions.AFTER_CURSOR })
+			end)
+			vim.keymap.set("", "F", function()
+				hop.hint_char1({ direction = directions.BEFORE_CURSOR })
+			end)
+		end,
+	},
 }
