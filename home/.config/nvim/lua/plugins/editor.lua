@@ -93,6 +93,9 @@ return {
 		"hrsh7th/cmp-cmdline",
 	},
 	{
+		"hrsh7th/cmp-emoji",
+	},
+	{
 		"zbirenbaum/copilot.lua",
 		cmd = "Copilot",
 		event = "InsertEnter",
@@ -127,6 +130,7 @@ return {
 				sources = cmp.config.sources({
 					{ name = "copilot" },
 					{ name = "nvim_lsp" },
+					{ name = "emoji" },
 				}, {
 					{ name = "buffer" },
 				}),
@@ -157,6 +161,7 @@ return {
 			"hrsh7th/cmp-buffer",
 			"hrsh7th/cmp-path",
 			"hrsh7th/cmp-cmdline",
+			"hrsh7th/cmp-emoji",
 			"zbirenbaum/copilot-cmp",
 		},
 	},
