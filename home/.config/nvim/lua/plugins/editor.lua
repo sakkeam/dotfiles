@@ -258,4 +258,9 @@ return {
 			vim.api.nvim_set_keymap("n", "<Leader>.", "<Cmd>NvimTreeToggle<CR>", { silent = true, noremap = true })
 		end,
 	},
+	{
+		"Isrothy/neominimap.nvim",
+		version = "v3.x.x",
+		lazy = false,
+	},
 }
