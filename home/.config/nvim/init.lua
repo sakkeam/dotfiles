@@ -8,6 +8,8 @@ vim.opt.shiftwidth = 2
 
 vim.g.mapleader = " "
 
+vim.keymap.set("i", "<C-b>", "<Left>", { noremap = true })
+vim.keymap.set("i", "<C-f>", "<Right>", { noremap = true })
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
 vim.api.nvim_create_autocmd("InsertLeave", {
