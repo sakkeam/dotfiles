@@ -8,7 +8,9 @@ vim.opt.shiftwidth = 2
 
 vim.g.mapleader = " "
 
+vim.keymap.set("i", "<C-a>", "<Home>", { noremap = true })
 vim.keymap.set("i", "<C-b>", "<Left>", { noremap = true })
+vim.keymap.set("i", "<C-e>", "<End>", { noremap = true })
 vim.keymap.set("i", "<C-f>", "<Right>", { noremap = true })
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
