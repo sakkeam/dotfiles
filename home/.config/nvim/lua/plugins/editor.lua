@@ -93,6 +93,18 @@ return {
 		"hrsh7th/cmp-cmdline",
 	},
 	{
+		"zbirenbaum/copilot.lua",
+		cmd = "Copilot",
+		event = "InsertEnter",
+		opts = {},
+	},
+	{
+		"zbirenbaum/copilot-cmp",
+		opts = true,
+		dependencies = {
+			"zbirenbaum/copilot.lua",
+		},
+	},
 	{
 		"hrsh7th/nvim-cmp",
 		config = function()
@@ -113,6 +125,7 @@ return {
 					["<Tab>"] = cmp.mapping.confirm({ select = true }),
 				}),
 				sources = cmp.config.sources({
+					{ name = "copilot" },
 					{ name = "nvim_lsp" },
 				}, {
 					{ name = "buffer" },
@@ -141,6 +154,7 @@ return {
 			"hrsh7th/cmp-buffer",
 			"hrsh7th/cmp-path",
 			"hrsh7th/cmp-cmdline",
+			"zbirenbaum/copilot-cmp",
 		},
 	},
 }
