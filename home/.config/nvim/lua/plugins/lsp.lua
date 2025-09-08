@@ -8,14 +8,20 @@ return {
   },
   {
     "mason-org/mason-lspconfig.nvim",
-    opts = {
-      ensure_installed = {
-        "lua_ls",
-      },
-    },
+    opts = {},
     dependencies = {
       "mason-org/mason.nvim",
       "neovim/nvim-lspconfig",
+    },
+  },
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    opts = {
+      ensure_installed = {
+        -- lua
+        "lua_ls",
+        "stylua",
+      },
     },
   },
   {
