@@ -5,5 +5,13 @@ return {
 	},
 	{
 		"sindrets/diffview.nvim",
+		config = function()
+			vim.api.nvim_set_keymap(
+				"n",
+				"<Leader>d",
+				"<Cmd>DiffviewFileHistory %<CR>",
+				{ silent = true, noremap = true }
+			)
+		end,
 	},
 }
