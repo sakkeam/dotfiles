@@ -13,6 +13,8 @@ alias reload='exec -l'
 
 export EDITOR=nvim
 
+alias edit="$EDITOR"
+
 source /home/konosuke/.config/broot/launcher/bash/br
 . "$HOME/.cargo/env"
 export VOLTA_HOME="$HOME/.volta"
