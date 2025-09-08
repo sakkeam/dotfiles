@@ -76,4 +76,8 @@ return {
 			"nvim-tree/nvim-web-devicons",
 		},
 	},
+	{
+		"abecodes/tabout.nvim",
+		opts = {},
+	},
 }
