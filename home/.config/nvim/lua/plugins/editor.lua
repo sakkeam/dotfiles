@@ -183,4 +183,10 @@ return {
 			end)
 		end,
 	},
+	{
+		"nvim-treesitter/nvim-treesitter",
+		branch = "master",
+		lazy = false,
+		build = ":TSUpdate",
+	},
 }
