@@ -11,5 +11,9 @@ vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
 vim.api.nvim_create_autocmd("InsertLeave", {
 	pattern = "*",
-	command = "update",
+	callback = function()
+		vim.schedule(function()
+			vim.cmd("update")
+		end)
+	end,
 })
