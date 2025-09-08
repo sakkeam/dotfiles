@@ -12,6 +12,7 @@ return {
 				"<Cmd>DiffviewFileHistory %<CR>",
 				{ silent = true, noremap = true }
 			)
+			vim.api.nvim_set_keymap("n", "<Leader>D", "<Cmd>DiffviewClose<CR>", { silent = true, noremap = true })
 		end,
 	},
 }
