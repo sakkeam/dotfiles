@@ -60,4 +60,9 @@ return {
 			"nvim-tree/nvim-web-devicons",
 		},
 	},
+	{
+		"folke/which-key.nvim",
+		event = "VeryLazy",
+		opts = {},
+	},
 }
