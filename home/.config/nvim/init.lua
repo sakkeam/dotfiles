@@ -39,6 +39,8 @@ vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 vim.keymap.set("n", "<Leader>n", "<Cmd>bnext<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>p", "<Cmd>bprevious<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>q", "<Cmd>quit<CR>", { noremap = true })
+vim.keymap.set("n", "<Leader>s", "<Cmd>split<CR>", { noremap = true })
+vim.keymap.set("n", "<Leader>v", "<Cmd>vsplit<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>w", "<Cmd>write<CR>", { noremap = true })
 
 vim.api.nvim_create_autocmd("InsertLeave", {
