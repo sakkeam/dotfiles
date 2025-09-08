@@ -44,6 +44,10 @@ return {
 				-- lua
 				"lua_ls",
 				"stylua",
+
+				-- rust
+				"bacon",
+				"bacon_ls",
 			},
 		},
 	},
