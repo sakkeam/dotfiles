@@ -30,4 +30,14 @@ return {
 		event = "InsertEnter",
 		config = true,
 	},
+	{
+		"nvim-tree/nvim-web-devicons",
+	},
+	{
+		"nvim-lualine/lualine.nvim",
+		opts = true,
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
+	},
 }
