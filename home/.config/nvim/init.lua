@@ -17,6 +17,7 @@ vim.keymap.set("i", "<C-p>", "<Up>", { noremap = true })
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
 vim.keymap.set("n", "<Leader>q", "<Cmd>quit<CR>", { noremap = true })
+vim.keymap.set("n", "<Leader>w", "<Cmd>write<CR>", { noremap = true })
 
 vim.api.nvim_create_autocmd("InsertLeave", {
 	pattern = "*",
