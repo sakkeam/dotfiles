@@ -9,6 +9,8 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
+alias reload='exec -l'
+
 source /home/konosuke/.config/broot/launcher/bash/br
 . "$HOME/.cargo/env"
 export VOLTA_HOME="$HOME/.volta"
