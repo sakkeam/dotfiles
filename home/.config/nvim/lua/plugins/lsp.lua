@@ -48,6 +48,7 @@ return {
 				-- rust
 				"bacon",
 				"bacon_ls",
+				"rust_analyzer",
 			},
 		},
 	},
