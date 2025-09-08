@@ -32,6 +32,15 @@ return {
 				cmd = "lazygit",
 				direction = "float",
 				hidden = true,
+				on_open = function(term)
+					vim.api.nvim_buf_set_keymap(
+						term.bufnr,
+						"t",
+						"jj",
+						"<Cmd>close<CR>",
+						{ silent = true, noremap = true }
+					)
+				end,
 			})
 
 			function _G._lazygit_toggle()
