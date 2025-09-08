@@ -1,6 +1,16 @@
 require("config.lazy")
 
 vim.opt.cursorline = true
+vim.opt.list = true
+vim.opt.listchars = {
+	eol = "↵",
+	tab = "»-",
+	space = "·",
+	trail = "-",
+	extends = "»",
+	precedes = "«",
+	nbsp = "%",
+}
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.shiftwidth = 2
