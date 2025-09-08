@@ -36,7 +36,7 @@ return {
 					vim.api.nvim_buf_set_keymap(
 						term.bufnr,
 						"t",
-						"jj",
+						"...",
 						"<Cmd>close<CR>",
 						{ silent = true, noremap = true }
 					)
