@@ -56,6 +56,7 @@ return {
 			vim.api.nvim_set_keymap("n", "<Leader>F", "<Cmd>FzfLua files<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>b", "<Cmd>FzfLua buffers<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>f", "<Cmd>FzfLua git_files<CR>", { noremap = true })
+			vim.api.nvim_set_keymap("n", "<Leader>l", "<Cmd>FzfLua lines<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>s", "<Cmd>FzfLua lsp_document_symbols<CR>", { noremap = true })
 		end,
 		dependencies = {
