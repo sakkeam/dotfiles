@@ -19,7 +19,7 @@ return {
 
 			vim.api.nvim_set_keymap(
 				"n",
-				"<Leader>g",
+				"<Leader>v",
 				"<Cmd>lua _lazygit_toggle()<CR>",
 				{ silent = true, noremap = true }
 			)
