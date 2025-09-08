@@ -231,4 +231,16 @@ return {
 			})
 		end,
 	},
+	{
+		"nvim-lua/plenary.nvim",
+		branch = "master",
+	},
+	{
+		"CopilotC-Nvim/CopilotChat.nvim",
+		build = "make tiktoken",
+		opts = {},
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+	},
 }
