@@ -16,6 +16,14 @@ vim.opt.relativenumber = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 
+local undodir = vim.fn.stdpath("data") .. "/undodir"
+if vim.fn.isdirectory(undodir) == 0 then
+	vim.fn.mkdir(undodir, "p")
+end
+vim.opt.undodir = undodir
+
+vim.opt.undofile = true
+
 vim.g.mapleader = " "
 
 vim.keymap.set("i", "<C-a>", "<Home>", { noremap = true })
