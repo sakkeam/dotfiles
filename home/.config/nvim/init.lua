@@ -16,6 +16,8 @@ vim.keymap.set("i", "<C-n>", "<Down>", { noremap = true })
 vim.keymap.set("i", "<C-p>", "<Up>", { noremap = true })
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
+vim.keymap.set("n", "<Leader>n", "<Cmd>bnext<CR>", { noremap = true })
+vim.keymap.set("n", "<Leader>p", "<Cmd>bprevious<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>q", "<Cmd>quit<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>w", "<Cmd>write<CR>", { noremap = true })
 
