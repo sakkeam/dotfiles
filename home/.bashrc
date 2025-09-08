@@ -14,3 +14,11 @@ source /home/konosuke/.config/broot/launcher/bash/br
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 eval "$(starship init bash)"
+
+# pnpm
+export PNPM_HOME="/home/konosuke/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
