@@ -75,6 +75,10 @@ return {
 	},
 	{
 		"hedyhli/outline.nvim",
-		opts = {},
+		config = function()
+			require("outline").setup({})
+
+			vim.keymap.set("n", "<Leader>o", "<cmd>Outline<CR>")
+		end,
 	},
 }
