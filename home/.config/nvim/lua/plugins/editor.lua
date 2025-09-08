@@ -7,6 +7,27 @@ return {
 
 			local Terminal = require("toggleterm.terminal").Terminal
 
+			local brush = Terminal:new({
+				cmd = "brush",
+				direction = "float",
+				hidden = true,
+				on_open = function(term)
+					vim.api.nvim_buf_set_keymap(
+						term.bufnr,
+						"t",
+						"jj",
+						"<Cmd>close<CR>",
+						{ silent = true, noremap = true }
+					)
+				end,
+			})
+
+			function _G._brush_toggle()
+				brush:toggle()
+			end
+
+			vim.api.nvim_set_keymap("n", "<Leader>t", "<Cmd>lua _brush_toggle()<CR>", { silent = true, noremap = true })
+
 			local lazygit = Terminal:new({
 				cmd = "lazygit",
 				direction = "float",
