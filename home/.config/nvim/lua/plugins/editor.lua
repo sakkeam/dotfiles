@@ -53,7 +53,8 @@ return {
 		config = function()
 			require("fzf-lua").setup({})
 
-			vim.api.nvim_set_keymap("n", "<Leader>f", "<Cmd>FzfLua files<CR>", { noremap = true })
+			vim.api.nvim_set_keymap("n", "<Leader>F", "<Cmd>FzfLua files<CR>", { noremap = true })
+			vim.api.nvim_set_keymap("n", "<Leader>f", "<Cmd>FzfLua git_files<CR>", { noremap = true })
 		end,
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
