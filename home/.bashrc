@@ -11,6 +11,8 @@ PS1='[\u@\h \W]\$ '
 
 alias reload='exec -l'
 
+export EDITOR=nvim
+
 source /home/konosuke/.config/broot/launcher/bash/br
 . "$HOME/.cargo/env"
 export VOLTA_HOME="$HOME/.volta"
