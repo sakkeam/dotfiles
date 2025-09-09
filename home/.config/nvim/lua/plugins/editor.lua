@@ -326,4 +326,11 @@ return {
 		"numToStr/Comment.nvim",
 		opts = true,
 	},
+	{
+		"folke/todo-comments.nvim",
+		opts = {},
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+	},
 }
