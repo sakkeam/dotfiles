@@ -315,6 +315,10 @@ return {
 	},
 	{
 		"nvim-focus/focus.nvim",
-		opts = true,
+		config = function()
+			require("focus").setup()
+
+			vim.api.nvim_set_keymap("n", "<Leader>z", "<Cmd>FocusToggle<CR>", { silent = true, noremap = true })
+		end,
 	},
 }
