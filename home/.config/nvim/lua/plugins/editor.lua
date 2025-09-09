@@ -282,4 +282,8 @@ return {
 		main = "ibl",
 		opts = {},
 	},
+	{
+		"brenoprata10/nvim-highlight-colors",
+		opts = {},
+	},
 }
