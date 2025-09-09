@@ -256,7 +256,7 @@ return {
 
 			require("nvim-tree").setup()
 
-			vim.api.nvim_set_keymap("n", "<Leader>.", "<Cmd>NvimTreeToggle<CR>", { silent = true, noremap = true })
+			vim.api.nvim_set_keymap("n", "<Leader>r", "<Cmd>NvimTreeToggle<CR>", { silent = true, noremap = true })
 		end,
 	},
 	{
