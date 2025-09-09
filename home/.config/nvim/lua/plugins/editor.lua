@@ -26,7 +26,7 @@ return {
 				brush:toggle()
 			end
 
-			vim.api.nvim_set_keymap("n", "<Leader>t", "<Cmd>lua _brush_toggle()<CR>", { silent = true, noremap = true })
+			vim.api.nvim_set_keymap("n", "<Leader>o", "<Cmd>lua _brush_toggle()<CR>", { silent = true, noremap = true })
 
 			local lazygit = Terminal:new({
 				cmd = "lazygit",
