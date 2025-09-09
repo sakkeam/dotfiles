@@ -62,3 +62,9 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 		end)
 	end,
 })
+
+vim.opt.autoread = true
+vim.api.nvim_create_autocmd("BufEnter", {
+	pattern = "*",
+	command = "checktime",
+})
