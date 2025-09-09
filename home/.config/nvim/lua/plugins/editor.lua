@@ -313,4 +313,8 @@ return {
 		"brenoprata10/nvim-highlight-colors",
 		opts = {},
 	},
+	{
+		"nvim-focus/focus.nvim",
+		opts = true,
+	},
 }
