@@ -155,6 +155,10 @@ return {
 						vim.snippet.expand(args.body)
 					end,
 				},
+				window = {
+					completion = cmp.config.window.bordered({ border = "rounded" }),
+					documentation = cmp.config.window.bordered({ border = "rounded" }),
+				},
 				mapping = cmp.mapping.preset.insert({
 					["<C-j>"] = cmp.mapping.scroll_docs(-1),
 					["<C-k>"] = cmp.mapping.scroll_docs(1),
