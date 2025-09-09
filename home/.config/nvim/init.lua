@@ -89,3 +89,13 @@ vim.opt.colorcolumn = {
 	120, -- StyLua
 }
 vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#FAB387" })
+vim.api.nvim_create_autocmd("FileType", { pattern = "lua", command = "setlocal colorcolumn=120" })
+vim.api.nvim_create_autocmd("FileType", { pattern = "python", command = "setlocal colorcolumn=79,88" })
+vim.api.nvim_create_autocmd("FileType", { pattern = "rust", command = "setlocal colorcolumn=99" })
+vim.api.nvim_create_autocmd("FileType", { pattern = "typescript", command = "setlocal colorcolumn=80" })
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "*",
+	callback = function()
+		vim.opt.colorcolumn = { vim.fn.min(vim.opt.colorcolumn:get()), vim.fn.max(vim.opt.colorcolumn:get()) }
+	end,
+})
