@@ -88,3 +88,4 @@ vim.opt.colorcolumn = {
 	99, -- rustfmt
 	120, -- StyLua
 }
+vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#FAB387" })
