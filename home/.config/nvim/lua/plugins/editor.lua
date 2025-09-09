@@ -322,4 +322,8 @@ return {
 			vim.api.nvim_set_keymap("n", "<Leader>tf", "<Cmd>FocusToggle<CR>", { silent = true, noremap = true })
 		end,
 	},
+	{
+		"numToStr/Comment.nvim",
+		opts = true,
+	},
 }
