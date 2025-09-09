@@ -59,7 +59,7 @@ return {
 
 			vim.api.nvim_set_keymap(
 				"n",
-				"<Leader>x",
+				"<Leader>tx",
 				"<Cmd>Trouble diagnostics toggle<CR>",
 				{ silent = true, noremap = true }
 			)
