@@ -12,7 +12,7 @@ cd "$(dirname "${0}")"
     | xargs --replace={} mkdir \
     --parents \
     --verbose \
-    "${HOME}/{}" \
+    "${HOME}/.{}" \
     && find \
     -mindepth 1 \
     -type f \
@@ -22,5 +22,5 @@ cd "$(dirname "${0}")"
     --symbolic \
     --verbose \
     "${PWD}/{}" \
-    "${HOME}/{}"
+    "${HOME}/.{}"
 )
