@@ -36,6 +36,7 @@ vim.keymap.set("i", "<C-n>", "<Down>", { noremap = true })
 vim.keymap.set("i", "<C-p>", "<Up>", { noremap = true })
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
+vim.keymap.set("n", "<Leader>e", "<Cmd>set paste!<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>h", "<C-w>h", { noremap = true })
 vim.keymap.set("n", "<Leader>j", "<C-w>j", { noremap = true })
 vim.keymap.set("n", "<Leader>k", "<C-w>k", { noremap = true })
