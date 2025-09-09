@@ -318,7 +318,7 @@ return {
 		config = function()
 			require("focus").setup()
 
-			vim.api.nvim_set_keymap("n", "<Leader>z", "<Cmd>FocusToggle<CR>", { silent = true, noremap = true })
+			vim.api.nvim_set_keymap("n", "<Leader>u", "<Cmd>FocusToggle<CR>", { silent = true, noremap = true })
 		end,
 	},
 }
