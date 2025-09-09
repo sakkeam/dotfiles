@@ -88,8 +88,8 @@ return {
 			vim.api.nvim_set_keymap("n", "<Leader>Y", "<Cmd>FzfLua lsp_workspace_symbols<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>b", "<Cmd>FzfLua buffers<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>f", "<Cmd>FzfLua git_files<CR>", { noremap = true })
-			vim.api.nvim_set_keymap("n", "<Leader>g", "<Cmd>FzfLua live_grep<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>i", "<Cmd>FzfLua lines<CR>", { noremap = true })
+			vim.api.nvim_set_keymap("n", "<Leader>p", "<Cmd>FzfLua live_grep<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>y", "<Cmd>FzfLua lsp_document_symbols<CR>", { noremap = true })
 		end,
 		dependencies = {
