@@ -243,7 +243,7 @@ return {
 		config = function()
 			require("CopilotChat").setup({})
 
-			vim.api.nvim_set_keymap("n", "<Leader>c", "<Cmd>CopilotChatToggle<CR>", { silent = true, noremap = true })
+			vim.api.nvim_set_keymap("n", "<Leader>tc", "<Cmd>CopilotChatToggle<CR>", { silent = true, noremap = true })
 		end,
 		dependencies = {
 			"nvim-lua/plenary.nvim",
@@ -257,7 +257,7 @@ return {
 
 			require("nvim-tree").setup()
 
-			vim.api.nvim_set_keymap("n", "<Leader>r", "<Cmd>NvimTreeToggle<CR>", { silent = true, noremap = true })
+			vim.api.nvim_set_keymap("n", "<Leader>tt", "<Cmd>NvimTreeToggle<CR>", { silent = true, noremap = true })
 		end,
 	},
 	{
@@ -271,7 +271,7 @@ return {
 				},
 			}
 
-			vim.api.nvim_set_keymap("n", "<Leader>m", "<Cmd>Neominimap Toggle<CR>", { silent = true, noremap = true })
+			vim.api.nvim_set_keymap("n", "<Leader>tm", "<Cmd>Neominimap Toggle<CR>", { silent = true, noremap = true })
 		end,
 	},
 	{
@@ -319,7 +319,7 @@ return {
 		config = function()
 			require("focus").setup()
 
-			vim.api.nvim_set_keymap("n", "<Leader>u", "<Cmd>FocusToggle<CR>", { silent = true, noremap = true })
+			vim.api.nvim_set_keymap("n", "<Leader>tf", "<Cmd>FocusToggle<CR>", { silent = true, noremap = true })
 		end,
 	},
 }
