@@ -83,13 +83,13 @@ return {
 		config = function()
 			require("fzf-lua").setup({})
 
+			vim.api.nvim_set_keymap("n", "<Leader>/", "<Cmd>FzfLua lsp_document_symbols<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>F", "<Cmd>FzfLua files<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>I", "<Cmd>FzfLua lines<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>b", "<Cmd>FzfLua buffers<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>f", "<Cmd>FzfLua git_files<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>g", "<Cmd>FzfLua live_grep<CR>", { noremap = true })
 			vim.api.nvim_set_keymap("n", "<Leader>i", "<Cmd>FzfLua blines<CR>", { noremap = true })
-			vim.api.nvim_set_keymap("n", "<Leader>s", "<Cmd>FzfLua lsp_document_symbols<CR>", { noremap = true })
 		end,
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
