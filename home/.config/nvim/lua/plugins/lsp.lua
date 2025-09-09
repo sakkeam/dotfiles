@@ -28,7 +28,7 @@ return {
 				pattern = "*",
 				callback = function()
 					if #vim.lsp.get_clients() > 0 then
-						vim.lsp.buf.hover({ focusable = false, silent = true })
+						vim.lsp.buf.hover({ focusable = false, border = "rounded", silent = true })
 					end
 				end,
 			})
