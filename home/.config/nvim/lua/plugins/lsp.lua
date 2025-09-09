@@ -99,4 +99,8 @@ return {
 			vim.keymap.set("n", "<Leader>to", "<cmd>Outline<CR>")
 		end,
 	},
+	{
+		"nvimtools/none-ls.nvim",
+		opts = {},
+	},
 }
