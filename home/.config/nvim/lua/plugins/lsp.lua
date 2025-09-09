@@ -103,4 +103,7 @@ return {
 		"nvimtools/none-ls.nvim",
 		opts = {},
 	},
+	{
+		"mfussenegger/nvim-lint",
+	},
 }
