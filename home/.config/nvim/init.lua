@@ -15,6 +15,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
+vim.opt.updatetime = 100
 
 local undodir = vim.fn.stdpath("data") .. "/undodir"
 if vim.fn.isdirectory(undodir) == 0 then
