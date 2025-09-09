@@ -80,3 +80,11 @@ vim.api.nvim_create_autocmd("BufEnter", {
 	pattern = "*",
 	command = "checktime",
 })
+
+vim.opt.colorcolumn = {
+	79, -- PEP 8
+	80, -- Biome
+	88, -- Ruff
+	99, -- rustfmt
+	120, -- StyLua
+}
