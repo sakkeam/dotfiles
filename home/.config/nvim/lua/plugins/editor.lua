@@ -273,4 +273,8 @@ return {
 			vim.api.nvim_set_keymap("n", "<Leader>m", "<Cmd>Neominimap Toggle<CR>", { silent = true, noremap = true })
 		end,
 	},
+	{
+		"j-hui/fidget.nvim",
+		opts = {},
+	},
 }
