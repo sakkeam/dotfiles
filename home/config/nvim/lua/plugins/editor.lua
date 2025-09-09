@@ -351,4 +351,9 @@ return {
 			"nvim-lua/plenary.nvim",
 		},
 	},
+	{
+		"IogaMaster/neocord",
+		event = "VeryLazy",
+		opts = {},
+	},
 }
