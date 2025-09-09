@@ -54,7 +54,16 @@ return {
 	},
 	{
 		"folke/trouble.nvim",
-		opts = {},
+		config = function()
+			require("trouble").setup({})
+
+			vim.api.nvim_set_keymap(
+				"n",
+				"<Leader>x",
+				"<Cmd>Trouble diagnostics toggle<CR>",
+				{ silent = true, noremap = true }
+			)
+		end,
 	},
 	{
 		"stevearc/conform.nvim",
