@@ -36,6 +36,7 @@ vim.keymap.set("i", "<C-n>", "<Down>", { noremap = true })
 vim.keymap.set("i", "<C-p>", "<Up>", { noremap = true })
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
+vim.keymap.set("n", "<Leader>B", "<Cmd>bdelete<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>E", "<Cmd>set paste!<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>N", "<Cmd>bprevious<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>Q", "<Cmd>quitall<CR>", { noremap = true })
