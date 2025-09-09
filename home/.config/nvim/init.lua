@@ -24,6 +24,11 @@ vim.opt.undodir = undodir
 
 vim.opt.undofile = true
 
+vim.opt.hlsearch = true
+vim.opt.ignorecase = true
+vim.opt.incsearch = true
+vim.opt.smartcase = true
+
 vim.g.mapleader = " "
 
 vim.keymap.set("i", "<C-a>", "<Home>", { noremap = true })
