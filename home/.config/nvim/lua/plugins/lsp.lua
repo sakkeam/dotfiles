@@ -27,8 +27,11 @@ return {
 			vim.api.nvim_create_autocmd("CursorHold", {
 				pattern = "*",
 				callback = function()
-					if #vim.lsp.get_clients() > 0 then
-						vim.lsp.buf.hover({ focusable = false, border = "rounded", silent = true })
+					local clients = vim.lsp.get_clients()
+					for _, client in ipairs(clients) do
+						if client.server_capabilities.hoverProvider then
+							vim.lsp.buf.hover({ focusable = false, border = "rounded", silent = true })
+						end
 					end
 				end,
 			})
