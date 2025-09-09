@@ -9,7 +9,7 @@ return {
 
 			local brush = Terminal:new({
 				cmd = "brush",
-				direction = "float",
+				direction = "horizontal",
 				hidden = true,
 				on_open = function(term)
 					vim.api.nvim_buf_set_keymap(
