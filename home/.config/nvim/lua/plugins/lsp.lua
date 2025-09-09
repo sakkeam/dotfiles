@@ -23,6 +23,15 @@ return {
 					},
 				},
 			})
+
+			vim.api.nvim_create_autocmd("CursorHold", {
+				pattern = "*",
+				callback = function()
+					if #vim.lsp.get_clients() > 0 then
+						vim.lsp.buf.hover({ focusable = false, silent = true })
+					end
+				end,
+			})
 		end,
 		dependencies = {
 			"cmp-nvim-lsp",
