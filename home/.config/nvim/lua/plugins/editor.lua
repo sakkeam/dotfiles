@@ -49,7 +49,7 @@ return {
 
 			vim.api.nvim_set_keymap(
 				"n",
-				"<Leader><C-Space>",
+				"<Leader>a",
 				"<Cmd>lua _lazygit_toggle()<CR>",
 				{ silent = true, noremap = true }
 			)
