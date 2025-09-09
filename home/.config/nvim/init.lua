@@ -38,6 +38,7 @@ vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
 vim.keymap.set("n", "<Leader>N", "<Cmd>bprevious<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>Q", "<Cmd>quitall<CR>", { noremap = true })
+vim.keymap.set("n", "<Leader>S", "<Cmd>vsplit<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>e", "<Cmd>set paste!<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>h", "<C-w>h", { noremap = true })
 vim.keymap.set("n", "<Leader>j", "<C-w>j", { noremap = true })
@@ -47,7 +48,6 @@ vim.keymap.set("n", "<Leader>n", "<Cmd>bnext<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>q", "<Cmd>quit<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>s", "<Cmd>split<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>u", "<Cmd>set list!<CR>", { noremap = true })
-vim.keymap.set("n", "<Leader>v", "<Cmd>vsplit<CR>", { noremap = true })
 vim.keymap.set("n", "<Leader>w", "<Cmd>write<CR>", { noremap = true })
 
 vim.api.nvim_create_autocmd("InsertLeave", {
