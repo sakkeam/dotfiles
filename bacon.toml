@@ -114,7 +114,7 @@ allow_warnings = true
 c = "job:clippy-all" # comment this to have 'c' run clippy on only the default target
 
 [jobs.waybar]
-command = ["waybar"]
+command = ["env", "GTK_DEBUG=interactive", "waybar"]
 need_stdout = true
 allow_warnings = true
 background = false
