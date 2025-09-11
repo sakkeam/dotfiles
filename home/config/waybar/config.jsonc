@@ -2,11 +2,11 @@
 {
   "layer": "top",
   "position": "bottom",
-  // equal to 16*2 (top and bottom margin)
+  // equal to 8*2 (top and bottom margin)
   //   + 32*2 (double taskbar height)
   //   + 2*2 (top and bottom border width)
   //   + 4 (bottom border width)
-  "height": 104,
+  "height": 88,
   "spacing": 0,
   "modules-center": [
     "image#logo",

@@ -14,9 +14,9 @@ window#waybar {
     background-color: rgba(0, 0, 0, 0.875);
     border: 2px solid rgba(49, 50, 68, 0.875);
     border-radius: 16px;
-    margin: 16px 0;
-    /* equal to 16/2 (half margin) */
-    padding: 0 8px;
+    margin: 8px 0;
+    /* equal to 8/2 (half margin) */
+    padding: 0 4px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -34,8 +34,8 @@ button:hover {
 }
 
 #workspaces button:not(.empty) .taskbar-window {
-    /* equal to 16/2 (half margin) */
-    padding: 0 8px;
+    /* equal to 8/2 (half margin) */
+    padding: 0 4px;
 }
 
 #workspaces button:not(.empty) .taskbar-window > image {
@@ -52,14 +52,14 @@ button:hover {
 }
 
 #image:not(.empty) {
-    /* equal to 16/2 (half margin) */
-    padding: 0 8px;
+    /* equal to 8/2 (half margin) */
+    padding: 0 4px;
 }
 
 #mpd,
 #custom-spotify {
-    /* equal to 16/2 (half margin) */
-    padding: 0 8px;
+    /* equal to 8/2 (half margin) */
+    padding: 0 4px;
 }
 
 #mpd.playing,
@@ -88,11 +88,11 @@ button:hover {
 #clock,
 #wireplumber {
     font-family: "Cascadia Code", monospace;
-    /* equal to 16/2 (half margin) */
-    padding: 0 8px;
+    /* equal to 8/2 (half margin) */
+    padding: 0 4px;
 }
 
 #tray image {
-    /* equal to 16/2 (half margin) */
-    padding: 0 8px;
+    /* equal to 8/2 (half margin) */
+    padding: 0 4px;
 }
