@@ -11,6 +11,7 @@ vim.opt.listchars = {
 	precedes = "«",
 	nbsp = "%",
 }
+vim.opt.clipboard = "unnamedplus"
 vim.opt.expandtab = true
 vim.opt.number = true
 vim.opt.relativenumber = true
