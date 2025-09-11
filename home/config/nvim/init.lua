@@ -11,6 +11,7 @@ vim.opt.listchars = {
 	precedes = "«",
 	nbsp = "%",
 }
+vim.opt.expandtab = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.shiftwidth = 2
