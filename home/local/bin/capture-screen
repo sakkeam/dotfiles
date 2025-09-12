@@ -1,0 +1,63 @@
+#!/bin/sh
+
+subcommand="$1"
+
+program_name="$(basename "$0")"
+
+pictures_dir="$(xdg-user-dir PICTURES)"
+videos_dir="$(xdg-user-dir VIDEOS)"
+
+timestamp() {
+  date +%s
+}
+
+select_geometry() {
+  slurp
+}
+
+capture_image() {
+  local path="$pictures_dir/screen-$(timestamp).png"
+  grim "$@" "$path"
+
+  wl-copy < "$path"
+
+  fyi \
+    --icon="$path" \
+    "$program_name" \
+    "Copied to clipboard and saved to $path"
+}
+
+capture_image_select() {
+  capture_image -g "$(select_geometry)"
+}
+
+capture_video() {
+  local path="$videos_dir/screen-$(timestamp).mkv"
+  wf-recorder \
+    --audio=@DEFAULT_MONITOR@ \
+    --codec=h264_qsv \
+    --framerate=60 \
+    --file="$path" \
+    "$@" \
+    "$path"
+
+  fyi "$program_name" "Saved to $path"
+}
+
+capture_video_select() {
+  capture_video --geometry="$(select_geometry)"
+}
+
+write_video() {
+  pkill -SIGINT --exact wf-recorder
+}
+
+if [ "$subcommand" = image ]; then
+  capture_image
+elif [ "$subcommand" = image-select ]; then
+  capture_image_select
+elif [ "$subcommand" = video ]; then
+  write_video || capture_video
+elif [ "$subcommand" = video-select ]; then
+  write_video || capture_video_select
+fi
