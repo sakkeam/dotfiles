@@ -1,6 +1,6 @@
 #!/bin/sh
 
-file=/tmp/spotify_art.jpg
+file=/tmp/spotify-art.jpg
 
 clean() {
   rm --force "$file"
