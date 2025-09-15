@@ -15,7 +15,7 @@ if [ "$mpc_status" == "playing" ]; then
     -an \
     -c:v copy \
     -update 1 \
-    "$path"
+    "$path" &
   printf '%s\n' "$path"
 elif [  "$mpc_status" == "paused" ]; then
   printf '%s\n' "$path"
