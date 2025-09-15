@@ -1,0 +1,4 @@
+#!/bin/sh
+
+pkill -SIGTERM --exact gammastep \
+  || gammastep -O 2800 &
