@@ -8,6 +8,7 @@ clean() {
 
 mpc_status="$(mpc status %state%)"
 if [ "$mpc_status" == "playing" ]; then
+  printf '%s\n' "$path"
   ffmpeg \
     -loglevel quiet \
     -i "$HOME/Music/$(mpc --format=%file% current)" \
@@ -16,7 +17,6 @@ if [ "$mpc_status" == "playing" ]; then
     -c:v copy \
     -update 1 \
     "$path" &
-  printf '%s\n' "$path"
 elif [  "$mpc_status" == "paused" ]; then
   printf '%s\n' "$path"
 elif [  "$mpc_status" == "stopped" ]; then
