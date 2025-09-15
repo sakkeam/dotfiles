@@ -23,4 +23,5 @@ elif [ "$status" == "Paused" ]; then
 elif [ "$status" == "" ]; then
   # "No players found"
   clean
+  printf '\n'
 fi

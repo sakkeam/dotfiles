@@ -21,4 +21,5 @@ elif [  "$mpc_status" == "paused" ]; then
   printf '%s\n' "$path"
 elif [  "$mpc_status" == "stopped" ]; then
   clean
+  printf '\n'
 fi
