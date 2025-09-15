@@ -15,6 +15,16 @@ export EDITOR=nvim
 
 alias edit="$EDITOR"
 
+_make() {
+  command make \
+    CC='sccache clang' \
+    CXX='sccache clang++' \
+    LDFLAGS=-fuse-ld=mold \
+    --jobs="$(nproc)" \
+    "$@"
+}
+alias make=_make
+
 source /home/konosuke/.config/broot/launcher/bash/br
 . "$HOME/.cargo/env"
 export VOLTA_HOME="$HOME/.volta"
