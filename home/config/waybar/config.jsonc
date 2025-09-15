@@ -10,7 +10,7 @@
   "spacing": 0,
   "modules-center": [
     "image#logo",
-    "image#album-art",
+    "image#mpd-art",
     "mpd",
     "image#spotify-art",
     "custom/spotify",
@@ -25,7 +25,7 @@
     // equal to taskbar height
     "size": 32
   },
-  "image#album-art": {
+  "image#mpd-art": {
     "exec": "~/.config/waybar/scripts/mpd_art.sh",
     // equal to double taskbar height
     "size": 64,
