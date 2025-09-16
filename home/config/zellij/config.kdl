@@ -286,7 +286,7 @@ web_client {
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-// theme "dracula"
+theme "catppuccin-mocha"
  
 // Choose the base input mode of zellij.
 // Default: normal
@@ -534,3 +534,19 @@ show_startup_tips false
 // can be useful for removing wrappers around commands
 // Note: be sure to escape backslashes and similar characters properly
 // post_command_discovery_hook "echo $RESURRECT_COMMAND | sed <your_regex_here>"
+
+themes {
+    catppuccin-mocha {
+        bg "#585b70" // Surface2
+        fg "#cdd6f4" // Text
+        red "#f38ba8"
+        green "#a6e3a1"
+        blue "#89b4fa"
+        yellow "#f9e2af"
+        magenta "#f5c2e7" // Pink
+        orange "#fab387" // Peach
+        cyan "#89dceb" // Sky
+        black "#181825" // Mantle
+        white "#cdd6f4" // Text
+    }
+}
