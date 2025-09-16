@@ -86,6 +86,12 @@ return {
 				"<Cmd>Trouble diagnostics toggle focus=true<CR>",
 				{ silent = true, noremap = true }
 			)
+			vim.api.nvim_set_keymap(
+				"n",
+				"<Leader><Leader>",
+				"<Cmd>Trouble diagnostics focus=true<CR>",
+				{ silent = true, noremap = true }
+			)
 
 			vim.api.nvim_create_autocmd("FileType", {
 				pattern = "rust",
@@ -95,6 +101,13 @@ return {
 						"n",
 						"<Leader>tx",
 						"<Cmd>Trouble bacon_ls toggle focus=true<CR>",
+						{ silent = true, noremap = true }
+					)
+					vim.api.nvim_buf_set_keymap(
+						0,
+						"n",
+						"<Leader><Leader>",
+						"<Cmd>Trouble bacon_ls focus=true<CR>",
 						{ silent = true, noremap = true }
 					)
 				end,
