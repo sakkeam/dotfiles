@@ -6,8 +6,11 @@ layout {
         pane {
             command "nvim"
         }
-        pane {
-            command "bacon"
+        pane split_direction="horizontal" {
+            pane {
+                command "bacon"
+            }
+            pane
         }
     }
     pane size=1 borderless=true {
