@@ -72,7 +72,7 @@ return {
 			vim.api.nvim_set_keymap(
 				"n",
 				"<Leader>tx",
-				"<Cmd>Trouble diagnostics toggle<CR>",
+				"<Cmd>Trouble diagnostics toggle focus=true<CR>",
 				{ silent = true, noremap = true }
 			)
 		end,
