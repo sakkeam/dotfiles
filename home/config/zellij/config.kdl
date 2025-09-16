@@ -273,7 +273,7 @@ plugins {
 load_plugins {
 }
 web_client {
-    font "monospace"
+    font "Cascadia Code NF"
 }
  
 // Use a simplified UI without special fonts (arrow glyphs)
