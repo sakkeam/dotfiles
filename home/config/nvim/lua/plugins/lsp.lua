@@ -67,7 +67,18 @@ return {
 	{
 		"folke/trouble.nvim",
 		config = function()
-			require("trouble").setup({})
+			require("trouble").setup({
+				modes = {
+					bacon_ls = {
+						mode = "diagnostics",
+						filter = function(items)
+							return vim.tbl_filter(function(item)
+								return item["item.source"] == "bacon-ls"
+							end, items)
+						end,
+					},
+				},
+			})
 
 			vim.api.nvim_set_keymap(
 				"n",
@@ -75,6 +86,19 @@ return {
 				"<Cmd>Trouble diagnostics toggle focus=true<CR>",
 				{ silent = true, noremap = true }
 			)
+
+			vim.api.nvim_create_autocmd("FileType", {
+				pattern = "rust",
+				callback = function()
+					vim.api.nvim_buf_set_keymap(
+						0,
+						"n",
+						"<Leader>tx",
+						"<Cmd>Trouble bacon_ls toggle focus=true<CR>",
+						{ silent = true, noremap = true }
+					)
+				end,
+			})
 		end,
 	},
 	{
