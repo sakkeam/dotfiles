@@ -25,6 +25,25 @@ _make() {
 }
 alias make=_make
 
+_cpiocp() {
+  local src="$1"
+  local dest="$2"
+
+  export _DEST="$(realpath "$dest")"
+
+  (
+    cd "$src"
+
+    mkdir --parents "$_DEST"
+    find . -type d | cpio --pass-through "$_DEST"
+    find . ! -type d | split \
+      --filter='cpio --pass-through "$_DEST"' \
+      --number="r/$(nproc)" \
+      --unbuffered
+  )
+}
+alias cpiocp=_cpiocp
+
 source /home/konosuke/.config/broot/launcher/bash/br
 . "$HOME/.cargo/env"
 export VOLTA_HOME="$HOME/.volta"
