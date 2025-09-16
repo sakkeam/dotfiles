@@ -324,14 +324,6 @@ return {
 		opts = {},
 	},
 	{
-		"nvim-focus/focus.nvim",
-		config = function()
-			require("focus").setup()
-
-			vim.api.nvim_set_keymap("n", "<Leader>tf", "<Cmd>FocusToggle<CR>", { silent = true, noremap = true })
-		end,
-	},
-	{
 		"numToStr/Comment.nvim",
 		opts = true,
 	},
