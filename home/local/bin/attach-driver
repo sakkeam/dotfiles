@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if zellij list-sessions --no-formatting \
+  grep --quiet '^driver .*EXITED'; then
+  zellij delete-session driver
+fi
+
 if zellij list-sessions --short | grep --quiet '^driver$'; then
   zellij attach driver
 else
