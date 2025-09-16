@@ -270,20 +270,6 @@ return {
 		end,
 	},
 	{
-		"Isrothy/neominimap.nvim",
-		version = "v3.x.x",
-		lazy = false,
-		init = function()
-			vim.g.neominimap = {
-				click = {
-					enabled = true,
-				},
-			}
-
-			vim.api.nvim_set_keymap("n", "<Leader>tm", "<Cmd>Neominimap Toggle<CR>", { silent = true, noremap = true })
-		end,
-	},
-	{
 		"j-hui/fidget.nvim",
 		opts = {},
 	},
