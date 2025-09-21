@@ -25,6 +25,14 @@ _make() {
 }
 alias make=_make
 
+_cmake() {
+  command cmake \
+    -DCMAKE_C_COMPILER_LAUNCHER=sccache \
+    -DCMAKE_CXX_COMPILER_LAUNCHER=sccache \
+    "$@"
+}
+alias cmake=_cmake
+
 _cpiocp() {
   local src="$1"
   local dest="$2"
