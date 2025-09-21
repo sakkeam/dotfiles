@@ -3,3 +3,9 @@
 [user]
 	email = konosukeam@gmail.com
 	name = Konosuke Sakai
+[credential "https://github.com"]
+	helper = 
+	helper = !/home/konosuke/.local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/home/konosuke/.local/bin/gh auth git-credential
