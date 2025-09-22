@@ -4,7 +4,7 @@ import = [
 ]
 
 [window]
-padding = { x = 32, y = 32 }
+padding = { x = 16, y = 16 }
 opacity = 0.875
 
 [font]
