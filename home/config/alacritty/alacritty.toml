@@ -5,7 +5,6 @@ import = [
 
 [window]
 padding = { x = 16, y = 16 }
-opacity = 0.875
 
 [font]
 normal = { family = "Cascadia Code NF", style = "Regular" }
