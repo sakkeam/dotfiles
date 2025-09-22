@@ -550,3 +550,9 @@ themes {
         white "#cdd6f4" // Text
     }
 }
+
+ui {
+    pane_frames {
+        rounded_corners true
+    }
+}
