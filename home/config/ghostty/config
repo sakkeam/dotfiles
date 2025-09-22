@@ -51,3 +51,5 @@
 font-family = ""
 font-family = "Cascadia Code NF"
 theme = catppuccin-mocha.conf
+background-image = ~/satuki.png
+background-image-opacity = 0.125
