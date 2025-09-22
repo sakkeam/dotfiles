@@ -50,3 +50,4 @@
 
 font-family = ""
 font-family = "Cascadia Code NF"
+theme = catppuccin-mocha.conf
