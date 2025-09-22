@@ -54,3 +54,4 @@ theme = catppuccin-mocha.conf
 background-image = ~/satuki.png
 background-image-opacity = 0.125
 background-opacity = 0.875
+command = direct:brush --login
